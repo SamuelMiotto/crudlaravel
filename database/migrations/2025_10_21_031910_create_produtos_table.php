@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('produtos', function (Blueprint $table) {
             $table->id();
-            $table->string('titulo');
+            $table->string('titulo')->nullable();
             $table->string('descricao');
             $table->integer('qtd');
             $table->float('precoUnitario');
